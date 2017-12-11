@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+   {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <title>News</title>
+    <body>
+      {% include "header.html" with active="news" %}
+      <div class="main"></div>
+    </body>
+    
+{% endblock %}

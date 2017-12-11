@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" href="../css/test.css" type="text/css">
+  <title>Home</title>
+</head>
+<body>
+   
+    <div class="navbar">
+      <a class="icon" id="menu" onclick="myFunction()">&#9776;</a>
+      <div class="filler"></div>
+      <a href="#" class="active">home</a>
+      <a href="#">news</a>
+      <a href="#">contact</a>
+      <a href="#">about</a>
+      <div class="filler"></div>
+    </div>
+
+    <div class="sidebar" id="side">
+      <a href="#" class="sidetab active">home</a>
+      <a href="#" class="sidetab">news</a>
+      <a href="#" class="sidetab">contact</a>
+      <a href="#" class="sidetab">about</a>
+      <div class="filler"></div>
+    </div>
+
+    <div class="container">
+    	<h1>sup</h1>
+    </div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("side");
+	var y = document.getElementById("menu")
+    
+    if (x.className === "sidebar" && y.className === "icon") {
+      x.className += " responsive";
+      y.className += " clicked";
+    } else {
+      x.className = "sidebar";
+      y.className = "icon";
+    }	
+  }
+</script>
+</body>
+</html>

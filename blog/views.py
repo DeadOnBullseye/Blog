@@ -34,3 +34,15 @@ def create_post(request):
 def post_detail(request, pk):
     post = get_object_or_404(Post, id=pk)
     return render(request, 'post-detail.html', {'post': post})
+
+def news(request):
+  return render(request, 'news.html')
+
+def contact(request):
+  return render(request, 'contact.html')
+
+def about(request):
+  return render(request, 'about.html')
+
+def account(request):
+  return render(request, 'account.html')

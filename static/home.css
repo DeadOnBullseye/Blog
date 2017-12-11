@@ -1,0 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+/* Styles */
+
+html {
+  min-width: 500px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: black;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  align-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow: hidden;
+}
+
+.post {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.24);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.post-container {
+  margin: auto;
+  width: 95%;
+}
+
+.post .title {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.post .author {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1700px) {
+  .main {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .post-container {
+    width: 90%;
+    font-size: 1rem;
+  }
+  
+  .main {
+    width: 100%;
+  }
+}

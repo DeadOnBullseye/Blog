@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'accounts',
     'blog',
+    'django_extensions',
 ]
 
 AUTH_USER_MODEL = 'accounts.BaseUser'
