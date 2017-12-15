@@ -23,6 +23,7 @@ body {
   box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
   display: flex;
   z-index: 999;
+  border-bottom: 1px solid black;
 }
 
 .navbar a {
@@ -44,12 +45,13 @@ a {
 }
 
 .navbar a.active {
-  border-bottom:   1px solid #000000; 
+  color: white;
+  background-color: black;
 }
 
 .navbar a:hover {
-  color: #212121;
-  background-color: rgba(33,33,33,0.075);
+  color: white;
+  background-color: black;
 }
 
 .navbar .icon {
@@ -60,7 +62,7 @@ a {
 }
 
 .navbar .icon:hover {
-  color: #000000; 
+  color: white; 
 }
 
 .filler {
@@ -91,10 +93,12 @@ a {
 }
 
 .sidebar a:hover {
-  background-color: rgba(33,33,33,0.075);
+  background-color: rgba(0,0,0,0.05);
 }
 
 .sidebar a.active {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
   border-bottom: 1px solid black;
 }
 

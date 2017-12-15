@@ -6,15 +6,18 @@
     <body>
       {% include "header.html" with active="home" %}
       <div class="main">
+        <div class="img-container">
+         <p>Griff's Blog</p>
+        </div>
+        <div id="header">
+          <h1 id="posts">Latest Posts:</h1>
+        </div>
         <div class="post-container">
           {% for post in posts %}
-          <div class="post">
+          <a href="/post/{{post.id}}" class="post">
             <div class="title">{{ post.title }}</div>
             <div class="author">By: {{ post.user }}</div>
-            <p></p>
-            {{ post.content }}
-            <p></p>
-          </div>
+          </a>
           {% endfor %}
         </div>
       </div>

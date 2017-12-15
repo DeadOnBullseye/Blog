@@ -13,11 +13,11 @@
 </div>
 
 <div class="sidebar" id="side">
-  <a href="/"  {% if active == "home" %}class="active"{% endif %}>Home</a>
-  <a href="/news"  {% if active == "news" %}class="active"{% endif %}>News</a>
-  <a href="/contact"  {% if active == "contact" %}class="active"{% endif %}>Contact</a>
-  <a href="/about"  {% if active == "about" %}class="active"{% endif %}>About</a>
-  <a href="/account"  {% if active == "account" %}class="active"{% endif %}>Account</a>
+  <a id="sidetab" href="/"  {% if active == "home" %}class="active"{% endif %}>Home</a>
+  <a id="sidetab" href="/news"  {% if active == "news" %}class="active"{% endif %}>News</a>
+  <a id="sidetab" href="/contact"  {% if active == "contact" %}class="active"{% endif %}>Contact</a>
+  <a id="sidetab" href="/about"  {% if active == "about" %}class="active"{% endif %}>About</a>
+  <a id="sidetab" href="/account"  {% if active == "account" %}class="active"{% endif %}>Account</a>
   <div class="filler"></div>
 </div>
 
@@ -33,6 +33,5 @@
       x.className = "sidebar";
       y.className = "icon";
     }	
-  }
-  
+  } 
 </script>

@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
-/* Styles */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+/* Styles */
 html {
   min-width: 500px;
 }
@@ -14,6 +15,30 @@ body {
   color: black;
 }
 
+.img-container {
+  width: 95%;
+  border: 1px solid black;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.24);
+  text-align: center;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+.img-container p {
+  font-size: 10rem;
+  font-family: "Poiret One", sans-serif;
+}
+
+#header {
+  width: 95%;
+  text-align: left;
+}
+
 .main {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -21,15 +46,28 @@ body {
   width: 50%;
   margin: auto;
   text-align: left;
+  align-items: center;
   align-content: center;
   font-family: "Barlow Semi Condensed", sans-serif;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .post {
   box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.24);
   padding: 20px;
   margin-bottom: 40px;
+  font-weight: 100;
+  border-radius: 3px;
+  border: 1px solid black;
+  height: 100px;
+  transition: ease all .4s;
+}
+
+.post:hover {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.24);
+  transition: ease all .2s;
 }
 
 .post-container {
@@ -76,7 +114,45 @@ body {
     font-size: 1rem;
   }
   
+  #header {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .img-container {
+    width: 90%;
+  }
+  
+  .img-container p {
+    font-size: 8rem;
+  }
+  
   .main {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .img-container p {
+    font-size: 6rem;
+  }
+  
+}
+
+@media screen and (max-width: 530px) {
+  .img-container p {
+    font-size: 4rem;
+  }
+  
+}  
+
+
+
+
+
+
+
+
+
+
+
